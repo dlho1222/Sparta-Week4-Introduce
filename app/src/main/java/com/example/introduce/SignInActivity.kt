@@ -6,8 +6,18 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 
 class SignInActivity : AppCompatActivity() {
+    val signUpResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+        result->
+
+        val updatedId = result.data?.getStringExtra("updatedId")
+        val updatedPassword = result.data?.getStringExtra("updatedPassword")
+        if(result.resultCode== RESULT_OK && updatedId != null&& updatedPassword!= null){
+            updateId(updatedId,updatedPassword)
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signin)
@@ -29,9 +39,15 @@ class SignInActivity : AppCompatActivity() {
         }
         navigateToSignUp.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
-            startActivity(intent)
+            signUpResult.launch(intent)
         }
 
 
+    }
+    private fun updateId(updatedId:String,updatedPassword:String){
+        val signInId = findViewById<EditText>(R.id.et_Id)
+        val password = findViewById<EditText>(R.id.et_Password)
+        signInId.setText(updatedId)
+        password.setText(updatedPassword)
     }
 }
