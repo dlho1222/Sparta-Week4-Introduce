@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Introduce</string>
     <string name="id">아이디: ID</string>
-    <string name="name">이름: 이름</string>
-    <string name="age">나이: 0</string>
-    <string name="MBTI">MBTI: MBTI</string>
+    <string name="name">이름: 이호</string>
+    <string name="age">나이: 29</string>
+    <string name="MBTI">MBTI: ESFJ</string>
     <string name="finish">종료</string>
     <string name="signUpNameTitle">이름</string>
     <string name="signUpNameHint">이름을 입력하세요.</string>

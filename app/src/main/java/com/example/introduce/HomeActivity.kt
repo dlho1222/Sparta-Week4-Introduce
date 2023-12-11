@@ -17,18 +17,12 @@ class HomeActivity : AppCompatActivity() {
         val finishButton = findViewById<Button>(R.id.btn_finish)
         val id = intent.getStringExtra("id")
         val tv_Id = findViewById<TextView>(R.id.tv_Id)
-        val tv_name = findViewById<TextView>(R.id.tv_Name)
-        val tv_age = findViewById<TextView>(R.id.tv_Age)
-        val tv_MBTI = findViewById<TextView>(R.id.tv_MBTI)
         profile.setImageResource(images[Random.nextInt(4)])
         finishButton.setOnClickListener {
             finish()
         }
 
         tv_Id.text = "아이디: $id"
-        tv_name.text = "이름: 이호"
-        tv_age.text = "나이: 29"
-        tv_MBTI.text = "MBTI: ESFJ"
 
     }
 }
