@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Introduce</string>
+    <string name="id">아이디: ID</string>
+    <string name="name">이름: 이름</string>
+    <string name="age">나이: 0</string>
+    <string name="MBTI">MBTI: MBTI</string>
+    <string name="finish">종료</string>
+    <string name="signUpNameTitle">이름</string>
+    <string name="signUpNameHint">이름을 입력하세요.</string>
+    <string name="IdTitle">아이디</string>
+    <string name="IdHint">아이디를 입력하세요.</string>
+    <string name="PasswordTitle">비밀번호</string>
+    <string name="PasswordHint">비밀번호를 입력하세요.</string>
+    <string name="signUpButton">회원가입</string>
+    <string name="loginButton">로그인</string>
+
 </resources>
