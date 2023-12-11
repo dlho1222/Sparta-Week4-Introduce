@@ -25,8 +25,7 @@
         android:layout_marginTop="50dp"
         android:gravity="center"
         android:text="@string/id"
-        android:textSize="26sp"
-        android:textStyle="bold"
+        style="@style/TextStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_Profile" />
@@ -38,8 +37,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="@string/name"
-        android:textSize="26sp"
-        android:textStyle="bold"
+        style="@style/TextStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_Id" />
@@ -51,8 +49,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="@string/age"
-        android:textSize="26sp"
-        android:textStyle="bold"
+        style="@style/TextStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_Name" />
@@ -64,8 +61,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="@string/MBTI"
-        android:textSize="26sp"
-        android:textStyle="bold"
+        style="@style/TextStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_Age" />
