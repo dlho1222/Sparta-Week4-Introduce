@@ -55,7 +55,7 @@
     <EditText
         android:id="@+id/et_Email"
         style="@style/EditTextStyle"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/EmailHint"
         android:inputType="textEmailAddress"
@@ -67,7 +67,7 @@
     <EditText
         android:id="@+id/et_EmailForm"
         style="@style/EditTextStyle"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/EmailFormHint"
         android:inputType="textEmailAddress"
