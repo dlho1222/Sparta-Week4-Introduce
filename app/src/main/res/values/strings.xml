@@ -13,5 +13,10 @@
     <string name="PasswordHint">비밀번호를 입력하세요.</string>
     <string name="signUpButton">회원가입</string>
     <string name="loginButton">로그인</string>
+    <string name="EmailTitle">이메일</string>
+    <string name="EmailHint">Exemple</string>
+    <string name="EmailFormHint">"@"Exemple.com</string>
+    <string name="ConfirmPasswordTitle">비밀번호 확인</string>
+    <string name="ConfirmPasswordHint">비밀번호를 입력하세요.</string>
 
 </resources>
