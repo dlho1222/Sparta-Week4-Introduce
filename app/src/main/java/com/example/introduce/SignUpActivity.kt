@@ -12,13 +12,11 @@ import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ListAdapter
 import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.edit
 import androidx.core.view.isVisible
-import androidx.core.widget.addTextChangedListener
 import java.util.regex.Pattern
 
 class SignUpActivity : AppCompatActivity() {
@@ -53,6 +51,8 @@ class SignUpActivity : AppCompatActivity() {
                         putExtra("updatedId", id.text.toString())
                         putExtra("updatedPassword", password.text.toString())
                         setResult(RESULT_OK, this)
+                        clearData()
+
                     }
                     saveData()
                     finish()
@@ -66,8 +66,23 @@ class SignUpActivity : AppCompatActivity() {
             }
         }
 
-    }
 
+    }
+    private fun clearData(){
+        val id = findViewById<EditText>(R.id.et_Id)
+        val password = findViewById<EditText>(R.id.et_Password)
+        val confirmPassword = findViewById<EditText>(R.id.et_ConfirmPassword)
+        val email = findViewById<EditText>(R.id.et_Email)
+        val emailForm = findViewById<EditText>(R.id.et_EmailForm)
+        getSharedPreferences(INFO,Context.MODE_PRIVATE).edit {
+            clear()
+            id.setText("")
+            password.setText("")
+            confirmPassword.setText("")
+            email.setText("")
+            emailForm.setText("")
+        }
+    }
     private fun saveData() {   //입력 값 저장
         val id = findViewById<EditText>(R.id.et_Id)
         val password = findViewById<EditText>(R.id.et_Password)

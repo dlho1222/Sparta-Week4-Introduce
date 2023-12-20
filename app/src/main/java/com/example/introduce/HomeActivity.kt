@@ -10,11 +10,11 @@ import kotlin.random.Random
 
 class HomeActivity : AppCompatActivity() {
     val images = listOf(
-        R.drawable.android_original,
-        R.drawable.android_pressed2,
-        R.drawable.android_pressed,
-        R.drawable.cpu,
-        R.drawable.smile_icon
+        R.drawable.image_1,
+        R.drawable.image_2,
+        R.drawable.image_3,
+        R.drawable.image_4,
+        R.drawable.image_5
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
